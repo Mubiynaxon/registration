@@ -1,0 +1,263 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif; 
+  background: #ecf0f1; 
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex-grow: 1;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%; 
+  background: linear-gradient(135deg, #8e44ad, #2980b9);
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.navbar .logo h1 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a,
+.nav-links button {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  text-decoration: underline;
+  color: #3498db;
+  transform: scale(1.05); 
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b; 
+}
+
+.footer {
+  width: 100%; 
+  background: linear-gradient(135deg, #8e44ad, #2980b9); 
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; 
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 100%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #2c3e50; 
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  padding: 15px;
+  background: linear-gradient(135deg, #8e44ad, #2980b9); 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #bd66e2, #2980b9);
+}
+
+
+.error {
+  color: #e74c3c; 
+  font-size: 14px;
+  margin-top: -12px;
+  padding: 5px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+ul li {
+  padding: 12px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #dfe6e9; 
+}
+
+ul li button {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul li button:hover {
+  background-color: #c0392b; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
