@@ -1,11 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
-const HomePage = ({ user, onLogout }) => {
+const HomePage = ({ user }) => {
   const navigate = useNavigate();
-
-  
 
   return (
     <div className="container">
