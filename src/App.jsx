@@ -30,7 +30,7 @@ function App() {
             <Route path="/" element={<LoginPage onLogin={handleLogin} />} />
             <Route path="/register" element={<RegistrationPage onRegister={handleLogin} />} />
             <Route path="/home" element={user ? <HomePage user={user} /> : <LoginPage />} />
-            <Route path="/users" element={<UsersPage />} /> {/* New Users page route */}
+            <Route path="/users" element={<UsersPage />} /> 
           </Routes>
         </div>
         <Footer />
