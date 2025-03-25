@@ -43,8 +43,8 @@ const LoginPage = ({ onLogin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      onLogin(formData); // Pass user data to the App component
-      navigate('/home'); // Redirect to home page after successful login
+      onLogin(formData); 
+      navigate('/home'); 
     }
   };
 
