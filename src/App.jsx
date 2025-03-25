@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <UsersProvider> {/* Wrap your app with UsersProvider */}
+    <UsersProvider>
       <Router>
         <Header user={user} onLogout={handleLogout} />
         <div className="container">
