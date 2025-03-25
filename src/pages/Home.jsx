@@ -2,8 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = ({ user }) => {
-  const navigate = useNavigate();
-
+ 
   return (
     <div className="container">
       <h2>Welcome, {user.username}!</h2>
